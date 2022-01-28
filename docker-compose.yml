@@ -1,12 +1,11 @@
-version: '3.4'
+version: '3.8'
+
 services:
   linuxgsm:
-    build:
-      context: .
-      dockerfile: ./Dockerfile
+    image: ghcr.io/edifus/linuxgsm
     container_name: csgoserver
     environment:
-      - GAMESERVER=csWgoserver
+      - GAMESERVER=csgoserver
       - LGSM_GITHUBUSER=GameServerManagers
       - LGSM_GITHUBREPO=LinuxGSM
       - LGSM_GITHUBBRANCH=master

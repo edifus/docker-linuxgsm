@@ -10,18 +10,17 @@
 
 A dockerised version of LinuxGSM https://linuxgsm.com
 
-Dockerhub https://hub.docker.com/r/gameservermanagers/linuxgsm-docker/
+Github Container Repo: https://github.com/edifus/docker-linuxgsm/pkgs/container/linuxgsm
 # Usage
 
 ## docker-compose
 Below is an example `docker-compose` for csgoserver. Ports will vary depending upon server.
   ```
-version: '3.4'
+version: '3.8'
+
 services:
   linuxgsm:
-    build:
-      context: .
-      dockerfile: ./Dockerfile
+    image: ghcr.io/edifus/linuxgsm
     container_name: csgoserver
     environment:
       - GAMESERVER=csgoserver
