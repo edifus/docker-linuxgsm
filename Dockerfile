@@ -21,7 +21,7 @@ SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 RUN \
   echo "**** Install UTF-8 ****" && \
     apt-get update && \
-    apt-get install -y locales apt-utils debconf-utils && 
+    apt-get install -y locales apt-utils debconf-utils && \ 
     localedef -i en_US -c -f UTF-8 -A /usr/share/locale/locale.alias en_US.UTF-8 && \
   echo "**** apt upgrade ****" && \
     apt-get update && \
