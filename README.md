@@ -65,3 +65,4 @@ docker exec -it sdtdserver ./sdtdserver <command>
 docker exec -it sdtdserver tmux a
 ```
 
+
