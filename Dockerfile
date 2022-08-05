@@ -32,7 +32,7 @@ RUN \
       gzip \
       hostname \
       jq \
-      lib32gcc1 \
+      lib32gcc-s1 \
       lib32stdc++6 \
       locales \
       netcat \
