@@ -1,4 +1,4 @@
-FROM ubuntu:20.04
+FROM ubuntu:22.04
 
 LABEL maintainer="edifus <edifus@gmail.com>"
 
@@ -32,7 +32,7 @@ RUN \
       gzip \
       hostname \
       jq \
-      lib32gcc1 \
+      lib32gcc-s1 \
       lib32stdc++6 \
       locales \
       netcat \
